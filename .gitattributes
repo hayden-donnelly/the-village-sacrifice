@@ -5,7 +5,6 @@
 *.shader  text
 
 # Unity YAML
-*.mat merge=unityyamlmerge eol=lf
 *.anim merge=unityyamlmerge eol=lf
 *.unity merge=unityyamlmerge eol=lf
 *.prefab merge=unityyamlmerge eol=lf
