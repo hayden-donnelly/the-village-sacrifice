@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BaseState : MonoBehaviour 
 {
-	protected bool looping;
 	protected EnemyAIController motor;
 
 	protected void Start()
@@ -14,7 +13,6 @@ public class BaseState : MonoBehaviour
 
 	public virtual void Construct()
 	{
-		looping = true;
 		StartCoroutine(Behaviour());
 	}
 
