@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PatrolState : BaseState 
 {
-	[SerializeField] private List<Transform> patrolRouteParents = new List<Transform>();
+	[SerializeField] private NavMeshAgent agent;
+ 	[SerializeField] private List<Transform> patrolRouteParents = new List<Transform>();
 	private List<List<Transform>> patrolRoutes = new List<List<Transform>>();
 
 	protected void Start()
@@ -13,26 +15,57 @@ public class PatrolState : BaseState
 
 		for(int x = 0; x < patrolRouteParents.Count; x++)
 		{
+			List<Transform> temp = new List<Transform>();
 			for(int y = 0; y < patrolRouteParents[x].childCount; y++)
 			{
-				patrolRoutes[x][y] = patrolRouteParents[x].GetChild(y);
+				temp.Add(patrolRouteParents[x].GetChild(y));
 			}
+			patrolRoutes.Add(temp);
 		}
 
-		print(patrolRoutes.Count);
+		Construct();
 	}
 
 	public override void Construct()
 	{
-		List<List<float>> distances = new List<List<float>>();
+		float minDistance = Vector3.Distance(transform.position, patrolRoutes[0][0].position);
+		Vector2Int minDistID = new Vector2Int(0, 0);
 
-		for(int x = 0; x  > patrolRoutes.Count; x++)
+		for(int x = 0; x < patrolRoutes.Count; x++)
 		{
-			for(int y = 0; y > patrolRoutes[x].Count; y++)
+			for(int y = 0; y < patrolRoutes[x].Count; y++)
 			{
 				float distance = Vector3.Distance(transform.position, patrolRoutes[x][y].position);
-				distances[x][y] = distance;
+				if(distance < minDistance)
+				{
+					minDistance = distance;
+					minDistID = new Vector2Int(x, y);
+				}
 			}
+		}
+
+		StartCoroutine(Patrol(minDistID.x, minDistID.y));
+	}
+
+	private IEnumerator Patrol(int x, int y)
+	{
+		int patrolRouteIndex = y;
+
+		while(true)
+		{
+			agent.SetDestination(patrolRoutes[x][patrolRouteIndex].position);
+
+			while(Vector3.Distance(transform.position, agent.destination) > 2)
+			{
+				yield return null;
+			}
+
+			patrolRouteIndex++;
+			if(patrolRouteIndex >= patrolRoutes[x].Count)
+			{
+				patrolRouteIndex = 0;
+			}
+			yield return null;
 		}
 	}
 }
