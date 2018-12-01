@@ -1,0 +1,13 @@
+Enemy AI States:
+
+    1. Patrol:
+        - Follow patrol route
+        - Ocassionally switch routes and go to new areas
+    
+    2. Chase:
+        - Occurs after AI has detected the player
+        - Chase the player until they can no longer be seen
+
+    3. Search:
+        - Occurs once the player can no longer be seen
+        - Search the are surrounding the player's last known position
