@@ -22,6 +22,9 @@ ModelImporter:
     4300000: Wall4x4Var1.011
     4300002: Cube.010
     4300004: Wall4x4Var1.005
+    6400000: Cube.010
+    6400002: Wall4x4Var1.005
+    6400004: Wall4x4Var1.011
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -55,13 +58,13 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

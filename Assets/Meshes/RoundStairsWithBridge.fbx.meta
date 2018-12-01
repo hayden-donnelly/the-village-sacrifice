@@ -1,24 +1,30 @@
 fileFormatVersion: 2
-guid: 215c1b1dfb2234d468ecb2d36eb6006f
+guid: d6e9f53c2139c9240a486312ada4deb3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube.015
-    100002: //RootNode
-    100004: Plane.004
-    400000: Cube.015
-    400002: //RootNode
-    400004: Plane.004
-    2100000: Plaster
+    100000: Cube.022
+    100002: Cube.023
+    100004: Cube.024
+    100006: //RootNode
+    400000: Cube.022
+    400002: Cube.023
+    400004: Cube.024
+    400006: //RootNode
+    2100000: Wood
     2100002: Stone
-    2300000: Cube.015
-    2300002: Plane.004
-    3300000: Cube.015
-    3300002: Plane.004
-    4300000: Plane.004
-    4300002: Cube.015
-    6400000: Cube.015
-    6400002: Plane.004
+    2300000: Cube.022
+    2300002: Cube.023
+    2300004: Cube.024
+    3300000: Cube.022
+    3300002: Cube.023
+    3300004: Cube.024
+    4300000: Cube.024
+    4300002: Cube.023
+    4300004: Cube.022
+    6400000: Cube.022
+    6400002: Cube.023
+    6400004: Cube.024
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -58,7 +64,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
