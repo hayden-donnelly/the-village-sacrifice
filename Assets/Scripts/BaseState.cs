@@ -2,15 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseState : MonoBehaviour {
+public class BaseState : MonoBehaviour 
+{
+	protected bool looping;
+	protected EnemyAIController motor;
 
-	// Use this for initialization
-	void Start () {
-		
+	protected void Start()
+	{
+		motor = GetComponent<EnemyAIController>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public virtual void Construct()
+	{
+		looping = true;
+		StartCoroutine(Behaviour());
+	}
+
+	public virtual void Destruct()
+	{
+
+	}
+
+	public virtual IEnumerator Behaviour()
+	{
+		yield return null;
 	}
 }
