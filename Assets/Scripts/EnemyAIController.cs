@@ -10,6 +10,7 @@ public class EnemyAIController : MonoBehaviour
 	[SerializeField] private LayerMask mask;
 	[SerializeField] private Transform patrolRouteParent;
 	[SerializeField] private List<Transform> patrolRoute = new List<Transform>();
+	[SerializeField] private Transform test;
 
 	private int patrolRouteIndex;
 
@@ -20,6 +21,16 @@ public class EnemyAIController : MonoBehaviour
 
 		SetupPatrolRoute();
 		StartCoroutine(followRoute());
+		
+		// TEST
+		Vector3 avg = Vector3.zero;
+		for(int i = 0; i < patrolRoute.Count; i++)
+		{
+			avg += patrolRoute[i].position;
+		}
+		avg /= patrolRoute.Count;
+		print(avg);
+		test.position = avg;
 	} 
 
 	private void Update()
@@ -73,7 +84,7 @@ public class EnemyAIController : MonoBehaviour
 
 	}
 
-	private IEnumerator Chase()
+	///*private IEnumerator Chase()
 	{
 
 	}
