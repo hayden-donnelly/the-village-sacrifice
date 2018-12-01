@@ -67,4 +67,19 @@ public class EnemyAIController : MonoBehaviour
 			yield return null;
 		}
 	}
+
+	/*private IEnumerator Patrol()
+	{
+
+	}
+
+	private IEnumerator Chase()
+	{
+
+	}
+
+	private IEnumerator Search()
+	{
+
+	}*/
 }
