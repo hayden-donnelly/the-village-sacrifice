@@ -62,7 +62,6 @@ public class EnemyAIController : MonoBehaviour
 
 		while(true)
 		{
-			print("dsdasdasd");
 			agent.SetDestination(patrolRoute[patrolRouteIndex].position);
 
 			while(Vector3.Distance(agent.destination, transform.position) > 3)
