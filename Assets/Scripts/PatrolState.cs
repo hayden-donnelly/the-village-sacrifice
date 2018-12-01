@@ -22,8 +22,6 @@ public class PatrolState : BaseState
 			}
 			patrolRoutes.Add(temp);
 		}
-
-		Construct();
 	}
 
 	public override void Construct()
