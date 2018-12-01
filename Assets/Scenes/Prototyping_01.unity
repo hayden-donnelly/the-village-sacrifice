@@ -432,6 +432,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 23032974459871166, guid: 2477eb23d0c7d43328fe83c344c96965,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 57c68adb156f742ad898b5d8e24f3549, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2477eb23d0c7d43328fe83c344c96965, type: 2}
   m_IsPrefabAsset: 0
@@ -759,6 +764,11 @@ Prefab:
       propertyPath: patrolRouteParent
       value: 
       objectReference: {fileID: 33347034}
+    - target: {fileID: 23920453958380038, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2ac5aaed8add44beae6ab47ef52a44e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636, type: 2}
   m_IsPrefabAsset: 0
