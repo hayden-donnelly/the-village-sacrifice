@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: e6d6835cd0e6cec4c8d7fba3e6dfce7f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Wall4x4Var1
+    100004: Wall4x4Var1.002
+    100006: Cube.001
+    100008: Cube.005
+    100010: Cube.006
+    100012: Cube.010
+    100014: Cube.013
+    100016: Cube.014
+    100018: Cylinder
+    100020: Plane.000
+    100022: Wall4x4Var1.001
+    100024: Wall4x4Var1.003
+    100026: Wall4x4Var1.004
+    100028: Wall4x4Var1.005
+    100030: Wall4x4Var1.006
+    100032: Wall4x4Var1.007
+    100034: Wall4x4Var1.008
+    100036: Wall4x4Var1.009
+    100038: Wall4x4Var2DepthVaration
+    100040: Wall4x4Var2DepthVaration.001
+    100042: Wall4x4WoodFrameNonTiling
+    100044: Wall4x4WoodFrameTileable
+    400000: //RootNode
+    400002: Wall4x4Var1
+    400004: Wall4x4Var1.002
+    400006: Cube.001
+    400008: Cube.005
+    400010: Cube.006
+    400012: Cube.010
+    400014: Cube.013
+    400016: Cube.014
+    400018: Cylinder
+    400020: Plane.000
+    400022: Wall4x4Var1.001
+    400024: Wall4x4Var1.003
+    400026: Wall4x4Var1.004
+    400028: Wall4x4Var1.005
+    400030: Wall4x4Var1.006
+    400032: Wall4x4Var1.007
+    400034: Wall4x4Var1.008
+    400036: Wall4x4Var1.009
+    400038: Wall4x4Var2DepthVaration
+    400040: Wall4x4Var2DepthVaration.001
+    400042: Wall4x4WoodFrameNonTiling
+    400044: Wall4x4WoodFrameTileable
+    2100000: Plaster
+    2100002: Stone
+    2100004: Wood
+    2100006: Iron
+    2300000: Wall4x4Var1
+    2300002: Wall4x4Var1.002
+    2300004: Cube.001
+    2300006: Cube.005
+    2300008: Cube.006
+    2300010: Cube.010
+    2300012: Cube.013
+    2300014: Cube.014
+    2300016: Cylinder
+    2300018: Plane.000
+    2300020: Wall4x4Var1.001
+    2300022: Wall4x4Var1.003
+    2300024: Wall4x4Var1.004
+    2300026: Wall4x4Var1.005
+    2300028: Wall4x4Var1.006
+    2300030: Wall4x4Var1.007
+    2300032: Wall4x4Var1.008
+    2300034: Wall4x4Var1.009
+    2300036: Wall4x4Var2DepthVaration
+    2300038: Wall4x4Var2DepthVaration.001
+    2300040: Wall4x4WoodFrameNonTiling
+    2300042: Wall4x4WoodFrameTileable
+    3300000: Wall4x4Var1
+    3300002: Wall4x4Var1.002
+    3300004: Cube.001
+    3300006: Cube.005
+    3300008: Cube.006
+    3300010: Cube.010
+    3300012: Cube.013
+    3300014: Cube.014
+    3300016: Cylinder
+    3300018: Plane.000
+    3300020: Wall4x4Var1.001
+    3300022: Wall4x4Var1.003
+    3300024: Wall4x4Var1.004
+    3300026: Wall4x4Var1.005
+    3300028: Wall4x4Var1.006
+    3300030: Wall4x4Var1.007
+    3300032: Wall4x4Var1.008
+    3300034: Wall4x4Var1.009
+    3300036: Wall4x4Var2DepthVaration
+    3300038: Wall4x4Var2DepthVaration.001
+    3300040: Wall4x4WoodFrameNonTiling
+    3300042: Wall4x4WoodFrameTileable
+    4300000: Wall4x4Var1.002
+    4300002: Wall4x4Var1
+    4300004: Wall4x4Var2DepthVaration.001
+    4300006: Plane.000
+    4300008: Cube.014
+    4300010: Cube.013
+    4300012: Wall4x4Var1.009
+    4300014: Wall4x4Var1.008
+    4300016: Wall4x4Var1.007
+    4300018: Wall4x4Var1.006
+    4300020: Cube.010
+    4300022: Wall4x4Var1.005
+    4300024: Wall4x4Var1.004
+    4300026: Wall4x4Var1.003
+    4300028: Wall4x4WoodFrameNonTiling
+    4300030: Cube.006
+    4300032: Cube.001
+    4300034: Cylinder
+    4300036: Wall4x4Var1.001
+    4300038: Wall4x4Var2DepthVaration
+    4300040: Cube.005
+    4300042: Wall4x4WoodFrameTileable
+    6400000: Wall4x4Var1
+    6400002: Wall4x4Var1.002
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
