@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstPersonCharacterController : MonoBehaviour {
+public class FirstPersonCharacterController : MonoBehaviour 
+{
+	[SerializeField] private float walkSpeed;
+	[SerializeField] private CharacterController controller;
 
-	// Use this for initialization
-	void Start () {
-		
+	private void Start()
+	{
+		controller = GetComponent<CharacterController>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	private void Update()
+	{
+		float inputX = Input.GetAxisRaw("Horizontal");
+		float inputY = Input.GetAxisRaw("Vertical");
+		Vector3 movement = new Vector3(inputX, 0, inputY);
+		movement.Normalize();
+		movement *= walkSpeed * Time.deltaTime;
+		controller.Move(movement);
 	}
 }
