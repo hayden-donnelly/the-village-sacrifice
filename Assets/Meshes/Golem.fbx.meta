@@ -48,6 +48,7 @@ ModelImporter:
     7400002: Armature|Walking
     7400004: Armature|WalkCycle
     7400006: Armature|Searching
+    7400008: Armature|Attack
     9500000: //RootNode
     13700000: Cube.033
   externalObjects: {}
