@@ -7,9 +7,9 @@ public class PatrolState : BaseState
  	[SerializeField] private List<Transform> patrolRouteParents = new List<Transform>();
 	private List<List<Transform>> patrolRoutes = new List<List<Transform>>();
 
-	protected void Start()
+	private void Awake()
 	{
-		base.Start();
+		base.Awake();
 
 		for(int x = 0; x < patrolRouteParents.Count; x++)
 		{
@@ -43,15 +43,20 @@ public class PatrolState : BaseState
 		StartCoroutine(Patrol(minDistID.x, minDistID.y));
 	}
 
+	public override void Destruct()
+	{
+		StopAllCoroutines();
+	}
+
 	private IEnumerator Patrol(int x, int y)
 	{
 		int patrolRouteIndex = y;
 
 		while(true)
 		{
-			agent.SetDestination(patrolRoutes[x][patrolRouteIndex].position);
+			motor.agent.SetDestination(patrolRoutes[x][patrolRouteIndex].position);
 
-			while(Vector3.Distance(transform.position, agent.destination) > 2)
+			while(Vector3.Distance(transform.position, motor.agent.destination) > 2)
 			{
 				yield return null;
 			}
@@ -61,7 +66,15 @@ public class PatrolState : BaseState
 			{
 				patrolRouteIndex = 0;
 			}
-			yield return null;
+			yield return new WaitForEndOfFrame();
+		}
+	}
+
+	public override void Transition()
+	{
+		if(motor.CanSeePlayer())
+		{
+			motor.ChangeState("ChaseState");
 		}
 	}
 }
