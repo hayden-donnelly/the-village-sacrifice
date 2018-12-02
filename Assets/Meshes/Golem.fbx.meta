@@ -51,7 +51,17 @@ ModelImporter:
     7400008: Armature|Attack
     9500000: //RootNode
     13700000: Cube.033
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GolemBody
+    second: {fileID: 2100000, guid: 1e3ddad5b609375448b75511bff88597, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 145cc0b5742527a4b8c4147f5981c337, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
