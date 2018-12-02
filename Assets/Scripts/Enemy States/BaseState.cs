@@ -5,12 +5,11 @@ using UnityEngine.AI;
 
 public class BaseState : MonoBehaviour 
 {
-	[SerializeField] protected NavMeshAgent agent;
-	[SerializeField] protected EnemyAIController motor;
+	public bool unlocked;
+	protected EnemyAIController motor;
 
-	protected void Start()
+	protected void Awake()
 	{
-		agent = GetComponent<NavMeshAgent>();
 		motor = GetComponent<EnemyAIController>();
 	}
 
@@ -20,6 +19,11 @@ public class BaseState : MonoBehaviour
 	}
 
 	public virtual void Destruct()
+	{
+
+	}
+
+	public virtual void Transition()
 	{
 
 	}
