@@ -6,6 +6,7 @@ public class FirstPersonCharacterController : MonoBehaviour
 {
 	[SerializeField] private float walkSpeed;
 	[SerializeField] private float crouchSpeed;
+	[SerializeField] private float gravityForce;
 	[SerializeField] private float sensitivityX;
 	[SerializeField] private float sensitivityY;
 	[SerializeField] private CharacterController controller;
@@ -53,7 +54,9 @@ public class FirstPersonCharacterController : MonoBehaviour
 		Vector3 movement = new Vector3(inputX, 0, inputY);
 		movement.Normalize();
 		movement = transform.TransformDirection(movement);
-		movement *= moveSpeed * Time.deltaTime;
+		movement *= moveSpeed;
+		movement = new Vector3(movement.x, gravityForce, movement.z);
+		movement *= Time.deltaTime;
 		controller.Move(movement);
 	}
 }
