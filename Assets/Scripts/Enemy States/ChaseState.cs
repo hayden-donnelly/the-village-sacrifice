@@ -6,6 +6,7 @@ public class ChaseState : BaseState
 {
 	public override void Construct()
 	{
+		Debug.Log("Entering Chase State");
 		coroutine = Chase();
 		StartCoroutine(coroutine);
 	}
@@ -28,7 +29,7 @@ public class ChaseState : BaseState
 	{
 		if(!motor.CanSeePlayer())
 		{
-			motor.ChangeState("PatrolState");
+			motor.ChangeState("SearchState");
 		}
 	}
 }

@@ -9,15 +9,15 @@ public class FirstPersonCharacterController : MonoBehaviour
 	[SerializeField] private float gravityForce;
 	[SerializeField] private float sensitivityX;
 	[SerializeField] private float sensitivityY;
-	[SerializeField] private CharacterController controller;
 	[SerializeField] private Camera mainCamera;
+	[HideInInspector] public CharacterController Controller;
 
 	private bool isCrouched;
 	private float moveSpeed;
 
 	private void Start()
 	{
-		controller = GetComponent<CharacterController>();
+		Controller = GetComponent<CharacterController>();
 		mainCamera = Camera.main;
 
 		moveSpeed = walkSpeed;
@@ -44,6 +44,7 @@ public class FirstPersonCharacterController : MonoBehaviour
 		float mouseX = Input.GetAxis("Mouse X");
 		mouseX *= sensitivityX * Time.deltaTime;
 		transform.Rotate(Vector3.up, mouseX);
+
 		float mouseY = Input.GetAxis("Mouse Y");
 		mouseY *= sensitivityY * Time.deltaTime;
 		mainCamera.transform.Rotate(-Vector3.right, mouseY);
@@ -51,12 +52,14 @@ public class FirstPersonCharacterController : MonoBehaviour
 		// Movement
 		float inputX = Input.GetAxisRaw("Horizontal");
 		float inputY = Input.GetAxisRaw("Vertical");
+
 		Vector3 movement = new Vector3(inputX, 0, inputY);
 		movement.Normalize();
 		movement = transform.TransformDirection(movement);
 		movement *= moveSpeed;
 		movement = new Vector3(movement.x, gravityForce, movement.z);
 		movement *= Time.deltaTime;
-		controller.Move(movement);
+		
+		Controller.Move(movement);
 	}
 }

@@ -24,6 +24,8 @@ public class PatrolState : BaseState
 
 	public override void Construct()
 	{
+		Debug.Log("Entering Patrol State");
+
 		float minDistance = Vector3.Distance(transform.position, patrolRoutes[0][0]);
 		Vector2Int minDistID = new Vector2Int(0, 0);
 
@@ -55,6 +57,7 @@ public class PatrolState : BaseState
 
 		while(true)
 		{
+			// Follow patrol route
 			motor.agent.SetDestination(patrolRoutes[x][patrolRouteIndex]);
 
 			while(Vector3.Distance(transform.position, motor.agent.destination) > 2)
