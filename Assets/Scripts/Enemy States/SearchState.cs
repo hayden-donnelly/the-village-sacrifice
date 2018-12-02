@@ -45,7 +45,7 @@ public class SearchState : BaseState
         List<Vector3> searchRoute = new List<Vector3>();
         searchRoute.Add(lastSeenPosition);
 
-        int numberOfNodes = 3;
+        /*int numberOfNodes = 3;
         
         for(int i = 0 ; i < numberOfNodes; i++)
         {
@@ -61,7 +61,7 @@ public class SearchState : BaseState
                                             Random.Range(minY, maxY));
                 
             }
-        }
+        }*/
 
         return searchRoute;
     }

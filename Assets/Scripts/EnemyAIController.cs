@@ -8,14 +8,18 @@ public class EnemyAIController : MonoBehaviour
 	[SerializeField] private int fieldOfView;
 	[SerializeField] private LayerMask mask;
 	[HideInInspector] public NavMeshAgent agent;
-	[HideInInspector] public Transform player;
+	[HideInInspector] public Transform playerTransform;
+	[HideInInspector] public FirstPersonCharacterController player;
 	private BaseState state;
 	private BaseState[] availableStates;
 
 	private void Start()
 	{
 		agent = GetComponent<NavMeshAgent>();
-		player = GameObject.FindGameObjectWithTag("Player").transform;
+
+		GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+		playerTransform = playerObj.transform;
+		player = playerObj.GetComponent<FirstPersonCharacterController>();
 		availableStates = GetComponents<BaseState>();
 		state = GetComponent<PatrolState>();
 		state.Construct();
@@ -50,8 +54,8 @@ public class EnemyAIController : MonoBehaviour
 	public bool CanSeePlayer()
 	{
 		// TODO expand this to include detection by nose and distance
-		if(!Physics.Linecast(transform.position, player.position, mask)
-			&& Vector3.Angle(transform.forward, player.transform.position) < fieldOfView)
+		if(!Physics.Linecast(transform.position, playerTransform.position, mask)
+			&& Vector3.Angle(transform.forward, playerTransform.transform.position) < fieldOfView)
 		{
 			return true;
 		}
