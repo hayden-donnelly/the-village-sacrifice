@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4893938433092470}
   - component: {fileID: 33889850576471590}
   - component: {fileID: 23626436845795130}
+  - component: {fileID: 64264334976077768}
   m_Layer: 0
   m_Name: FencePillar2
   m_TagString: Untagged
@@ -82,4 +83,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1733883738733948}
+  m_Mesh: {fileID: 4300000, guid: 540445c131a387648bd8a88f1399f4c7, type: 3}
+--- !u!64 &64264334976077768
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733883738733948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 540445c131a387648bd8a88f1399f4c7, type: 3}
