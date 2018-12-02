@@ -24,6 +24,8 @@ public class PatrolState : BaseState
 
 	public override void Construct()
 	{
+		base.Construct();
+
 		float minDistance = Vector3.Distance(transform.position, patrolRoutes[0][0].position);
 		Vector2Int minDistID = new Vector2Int(0, 0);
 
@@ -45,6 +47,7 @@ public class PatrolState : BaseState
 
 	public override void Destruct()
 	{
+		base.Destruct();
 		StopAllCoroutines();
 	}
 
@@ -52,7 +55,7 @@ public class PatrolState : BaseState
 	{
 		int patrolRouteIndex = y;
 
-		while(true)
+		while(looping)
 		{
 			motor.agent.SetDestination(patrolRoutes[x][patrolRouteIndex].position);
 
@@ -66,14 +69,16 @@ public class PatrolState : BaseState
 			{
 				patrolRouteIndex = 0;
 			}
-			yield return new WaitForEndOfFrame();
+			yield return null;
 		}
+		yield return null;
 	}
 
 	public override void Transition()
 	{
 		if(motor.CanSeePlayer())
 		{
+			print("sadasd");
 			motor.ChangeState("ChaseState");
 		}
 	}

@@ -11,7 +11,7 @@ public class ChaseState : BaseState
 
 	public override void Destruct()
 	{
-		StopAllCoroutines();
+		StopCoroutine(Chase());
 	}
 
 	private IEnumerator Chase()
@@ -19,8 +19,9 @@ public class ChaseState : BaseState
 		while(true)
 		{
 			motor.agent.SetDestination(motor.player.position);
-			yield return new WaitForEndOfFrame();
+			yield return null;
 		}
+		yield return null;
 	}
 
 	public override void Transition()

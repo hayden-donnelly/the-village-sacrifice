@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class BaseState : MonoBehaviour 
 {
 	public bool unlocked;
+	public bool looping;
 	protected EnemyAIController motor;
 
 	protected void Awake()
@@ -15,12 +16,12 @@ public class BaseState : MonoBehaviour
 
 	public virtual void Construct()
 	{
-
+		looping = true;
 	}
 
 	public virtual void Destruct()
 	{
-
+		looping = false;
 	}
 
 	public virtual void Transition()
