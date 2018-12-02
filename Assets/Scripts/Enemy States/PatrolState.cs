@@ -71,6 +71,7 @@ public class PatrolState : BaseState
 				patrolRouteIndex = 0;
 			}
 			yield return null;
+			// TODO make the AI ocassionally change routes
 		}
 	}
 
