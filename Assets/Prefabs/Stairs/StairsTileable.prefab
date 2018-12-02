@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4796430837347512}
   - component: {fileID: 33232322657041760}
   - component: {fileID: 23392256337091486}
+  - component: {fileID: 64501521995320662}
   m_Layer: 0
   m_Name: StairsTileable
   m_TagString: Untagged
@@ -83,4 +84,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1481379385685052}
+  m_Mesh: {fileID: 4300000, guid: 75b285344449d0440884d351a4b7ad1a, type: 3}
+--- !u!64 &64501521995320662
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481379385685052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 75b285344449d0440884d351a4b7ad1a, type: 3}
