@@ -19,7 +19,7 @@ public class ChaseState : BaseState
 	{
 		while(true)
 		{
-			motor.agent.SetDestination(motor.player.position);
+			motor.agent.SetDestination(motor.playerTransform.position);
 			yield return null;
 		}
 	}
