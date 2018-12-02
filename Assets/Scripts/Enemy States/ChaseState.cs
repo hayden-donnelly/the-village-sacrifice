@@ -6,12 +6,13 @@ public class ChaseState : BaseState
 {
 	public override void Construct()
 	{
-		StartCoroutine(Chase());
+		coroutine = Chase();
+		StartCoroutine(coroutine);
 	}
 
 	public override void Destruct()
 	{
-		StopCoroutine(Chase());
+		StopCoroutine(coroutine);
 	}
 
 	private IEnumerator Chase()
@@ -21,7 +22,6 @@ public class ChaseState : BaseState
 			motor.agent.SetDestination(motor.player.position);
 			yield return null;
 		}
-		yield return null;
 	}
 
 	public override void Transition()
