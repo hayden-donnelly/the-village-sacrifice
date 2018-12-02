@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PatrolState : BaseState 
 {
-	[SerializeField] private NavMeshAgent agent;
  	[SerializeField] private List<Transform> patrolRouteParents = new List<Transform>();
 	private List<List<Transform>> patrolRoutes = new List<List<Transform>>();
 

@@ -1,28 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class BaseState : MonoBehaviour 
 {
-	protected EnemyAIController motor;
+	[SerializeField] protected NavMeshAgent agent;
+	[SerializeField] protected EnemyAIController motor;
 
 	protected void Start()
 	{
+		agent = GetComponent<NavMeshAgent>();
 		motor = GetComponent<EnemyAIController>();
 	}
 
 	public virtual void Construct()
 	{
-		StartCoroutine(Behaviour());
+
 	}
 
 	public virtual void Destruct()
 	{
 
-	}
-
-	public virtual IEnumerator Behaviour()
-	{
-		yield return null;
 	}
 }
