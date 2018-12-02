@@ -49,6 +49,7 @@ public class EnemyAIController : MonoBehaviour
 
 	public bool CanSeePlayer()
 	{
+		// TODO expand this to include detection by nose and distance
 		if(!Physics.Linecast(transform.position, player.position, mask)
 			&& Vector3.Angle(transform.forward, player.transform.position) < fieldOfView)
 		{
