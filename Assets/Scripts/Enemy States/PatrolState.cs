@@ -5,7 +5,7 @@ using UnityEngine;
 public class PatrolState : BaseState 
 {
  	[SerializeField] private List<Transform> patrolRouteParents = new List<Transform>();
-	private List<List<Transform>> patrolRoutes = new List<List<Transform>>();
+	private List<List<Vector3>> patrolRoutes = new List<List<Vector3>>();
 
 	private void Awake()
 	{
@@ -13,10 +13,10 @@ public class PatrolState : BaseState
 
 		for(int x = 0; x < patrolRouteParents.Count; x++)
 		{
-			List<Transform> temp = new List<Transform>();
+			List<Vector3> temp = new List<Vector3>();
 			for(int y = 0; y < patrolRouteParents[x].childCount; y++)
 			{
-				temp.Add(patrolRouteParents[x].GetChild(y));
+				temp.Add(patrolRouteParents[x].GetChild(y).position);
 			}
 			patrolRoutes.Add(temp);
 		}
@@ -24,14 +24,14 @@ public class PatrolState : BaseState
 
 	public override void Construct()
 	{
-		float minDistance = Vector3.Distance(transform.position, patrolRoutes[0][0].position);
+		float minDistance = Vector3.Distance(transform.position, patrolRoutes[0][0]);
 		Vector2Int minDistID = new Vector2Int(0, 0);
 
 		for(int x = 0; x < patrolRoutes.Count; x++)
 		{
 			for(int y = 0; y < patrolRoutes[x].Count; y++)
 			{
-				float distance = Vector3.Distance(transform.position, patrolRoutes[x][y].position);
+				float distance = Vector3.Distance(transform.position, patrolRoutes[x][y]);
 				if(distance < minDistance)
 				{
 					minDistance = distance;
@@ -55,7 +55,7 @@ public class PatrolState : BaseState
 
 		while(true)
 		{
-			motor.agent.SetDestination(patrolRoutes[x][patrolRouteIndex].position);
+			motor.agent.SetDestination(patrolRoutes[x][patrolRouteIndex]);
 
 			while(Vector3.Distance(transform.position, motor.agent.destination) > 2)
 			{
