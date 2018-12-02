@@ -45,7 +45,7 @@ public class PatrolState : BaseState
 
 	public override void Destruct()
 	{
-		StopCoroutine("Patrol");
+		StopAllCoroutines();
 	}
 
 	private IEnumerator Patrol(int x, int y)
