@@ -7,7 +7,6 @@
 # Unity YAML
 *.anim merge=unityyamlmerge eol=lf
 *.unity merge=unityyamlmerge eol=lf
-*.prefab merge=unityyamlmerge eol=lf
 *.physicMaterial2D merge=unityyamlmerge eol=lf
 *.physicMaterial merge=unityyamlmerge eol=lf
 *.asset merge=unityyamlmerge eol=lf
