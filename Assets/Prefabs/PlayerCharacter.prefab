@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4539120425112442}
   - component: {fileID: 143094685624993038}
   - component: {fileID: 114473762898583128}
+  - component: {fileID: 114017414291516278}
   - component: {fileID: 33448335821104760}
   - component: {fileID: 23032974459871166}
   m_Layer: 10
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836693378831180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.57, y: 0.88, z: 12.64}
+  m_LocalPosition: {x: -24.48, y: 0.88, z: -15.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4802924932841646}
@@ -163,6 +164,18 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1459333565186580}
   m_Enabled: 1
+--- !u!114 &114017414291516278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836693378831180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889cde5ab134445b49a274ea728962dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxInteractionDistance: 5
 --- !u!114 &114473762898583128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,10 +189,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 10
   crouchSpeed: 3
+  gravityForce: -10
   sensitivityX: 30
   sensitivityY: 30
-  controller: {fileID: 143094685624993038}
   mainCamera: {fileID: 20557816214421500}
+  Controller: {fileID: 0}
+  isCrouched: 0
 --- !u!143 &143094685624993038
 CharacterController:
   m_ObjectHideFlags: 1

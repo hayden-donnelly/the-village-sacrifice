@@ -27,7 +27,7 @@ public class ChaseState : BaseState
 
 			if(Vector3.Distance(transform.position, motor.playerTransform.position) <= captureDistance)
 			{
-				
+				// Gameover
 			}
 
 			yield return null;
