@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.05
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -7050,6 +7050,23 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0c7e9bdf3c26ac4c94d01fc7ee0ae41, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1208645305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1459333565186580, guid: 2477eb23d0c7d43328fe83c344c96965,
+    type: 2}
+  m_PrefabInternal: {fileID: 2039243402}
+--- !u!114 &1208645309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208645305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 3a9499b5ddd6d7847a841f110a27f509, type: 2}
 --- !u!1001 &1225034980
 Prefab:
   m_ObjectHideFlags: 0
