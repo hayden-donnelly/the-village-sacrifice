@@ -6,6 +6,10 @@ public class Chest : MonoBehaviour
 {
 	public void Interact()
 	{
-		GameState.hasKey = true;
+		if(!GameState.hasKey)
+		{
+			GameState.hasKey = true;
+			Debug.Log("Key obtained");
+		}
 	}
 }
