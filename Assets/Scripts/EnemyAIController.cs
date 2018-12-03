@@ -11,6 +11,7 @@ public class EnemyAIController : MonoBehaviour
 	[SerializeField] private float walkingDetectionRadius;
 	[SerializeField] private float crouchingDetectionRadius;
 	[SerializeField] private LayerMask mask;
+	[SerializeField] private Transform head;
 	[HideInInspector] public NavMeshAgent agent;
 	[HideInInspector] public Transform playerTransform;
 	[HideInInspector] public FirstPersonCharacterController player;
@@ -64,7 +65,7 @@ public class EnemyAIController : MonoBehaviour
 
 	public bool DetectedPlayer()
 	{
-		if(!Physics.Linecast(transform.position, playerTransform.position, mask))
+		if(!Physics.Linecast(head.position, playerTransform.position, mask))
 		{
 			if(Vector3.Angle(transform.forward, playerTransform.transform.position) < fieldOfView
 				&& Vector3.Distance(transform.position, playerTransform.position) <= sightDetectionDistance)
