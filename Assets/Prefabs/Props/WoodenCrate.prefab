@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4728137615785516}
   - component: {fileID: 33178675241642878}
   - component: {fileID: 23934438022493206}
-  - component: {fileID: 64668294853236622}
+  - component: {fileID: 65532925163831618}
   m_Layer: 0
   m_Name: WoodenCrate
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1559693164523446}
   m_Mesh: {fileID: 4300000, guid: fbbbb6b2f588757478dd37175160a47a, type: 3}
---- !u!64 &64668294853236622
-MeshCollider:
+--- !u!65 &65532925163831618
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -93,8 +93,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: fbbbb6b2f588757478dd37175160a47a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.011159603, y: 0.011133563, z: 0.011212231}
+  m_Center: {x: -0.000044794182, y: 0.000057480825, z: 0.005007064}

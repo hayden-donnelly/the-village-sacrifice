@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4505554354755036}
   - component: {fileID: 33127161565889002}
   - component: {fileID: 23495965542123204}
-  - component: {fileID: 64261637950786832}
+  - component: {fileID: 65748539797557488}
   m_Layer: 0
   m_Name: Chair.005
   m_TagString: Untagged
@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 4734073930395290}
   - component: {fileID: 33530449935615440}
   - component: {fileID: 23025627705946080}
-  - component: {fileID: 64698644789552042}
   m_Layer: 0
   m_Name: Chair.007
   m_TagString: Untagged
@@ -72,7 +71,6 @@ GameObject:
   - component: {fileID: 4774675576440564}
   - component: {fileID: 33423909354595980}
   - component: {fileID: 23574831470709532}
-  - component: {fileID: 64295835549418402}
   m_Layer: 0
   m_Name: Chair.006
   m_TagString: Untagged
@@ -293,8 +291,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634002652653778}
   m_Mesh: {fileID: 4300000, guid: 586f0040345b98045a2f806c179c8983, type: 3}
---- !u!64 &64261637950786832
-MeshCollider:
+--- !u!65 &65748539797557488
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -302,39 +300,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: 586f0040345b98045a2f806c179c8983, type: 3}
---- !u!64 &64295835549418402
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1687282503552702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 586f0040345b98045a2f806c179c8983, type: 3}
---- !u!64 &64698644789552042
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1634002652653778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 586f0040345b98045a2f806c179c8983, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0067278873, y: 0.0067947847, z: 0.014977183}
+  m_Center: {x: 0.000013609999, y: 0.00000053166866, z: 0.007192374}
 --- !u!108 &108078920254294800
 Light:
   m_ObjectHideFlags: 1
