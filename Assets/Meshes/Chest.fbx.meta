@@ -1,23 +1,30 @@
 fileFormatVersion: 2
-guid: fbbbb6b2f588757478dd37175160a47a
+guid: c1215d8f0aabac04aaaabfc759da2d1f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Wood
-    2100002: Iron
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: WoodenCrate
-    4300002: Chair
-    6400000: //RootNode
+    100000: Chair.001
+    100002: Chair.002
+    100004: //RootNode
+    400000: Chair.001
+    400002: Chair.002
+    400004: //RootNode
+    2100000: Gold
+    2100002: Wood
+    2300000: Chair.001
+    2300002: Chair.002
+    3300000: Chair.001
+    3300002: Chair.002
+    4300000: Chair.002
+    4300002: Chair.001
+    6400000: Chair.001
+    6400002: Chair.002
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Iron
-    second: {fileID: 2100000, guid: 9ca6731ded7607b4b9f049e5fdb647e8, type: 2}
+      name: Gold
+    second: {fileID: 2100000, guid: 32fda003ea551e94bb8106387a3cb739, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
