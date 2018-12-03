@@ -9,6 +9,7 @@ public class SearchState : BaseState
     public override void Construct()
     {
         Debug.Log("Entering Search State");
+        motor.animator.SetInteger("State", 1);
         coroutine = Search();
         StartCoroutine(coroutine);
     }
@@ -34,10 +35,20 @@ public class SearchState : BaseState
             searchRouteIndex++;
             if(searchRouteIndex >= searchRoute.Count)
             {
-                motor.ChangeState("PatrolState");  
+                StartCoroutine(ExitToPatrol());
+                break;
             }
             yield return null;
         }
+        yield return null;
+    }
+
+    private IEnumerator ExitToPatrol()
+    {
+        motor.animator.SetInteger("State", 3);  
+        yield return new WaitForSeconds(3);
+        motor.animator.SetInteger("State", 1);
+        motor.ChangeState("PatrolState");  
     }
 
     private List<Vector3> GenerateSearchRoute(Vector3 lastSeenPosition)
