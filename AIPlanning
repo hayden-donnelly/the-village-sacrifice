@@ -4,6 +4,8 @@ Enemy AI States:
         - Follow patrol route
         - Ocassionally switch routes and go to new areas
     
+    (Play notice animation)
+
     2. Chase:
         - Occurs after AI has detected the player
         - Chase the player until they can no longer be seen
