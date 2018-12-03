@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836693378831180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.78, y: 0.88, z: -8.75}
+  m_LocalPosition: {x: -16.351805, y: 1.39, z: 4.3134227}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4802924932841646}
@@ -109,8 +109,8 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -121,7 +121,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836693378831180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -190,8 +190,8 @@ MonoBehaviour:
   walkSpeed: 10
   crouchSpeed: 3
   gravityForce: -10
-  sensitivityX: 30
-  sensitivityY: 30
+  sensitivityX: 100
+  sensitivityY: 100
   mainCamera: {fileID: 20557816214421500}
   head: {fileID: 0}
   Controller: {fileID: 0}

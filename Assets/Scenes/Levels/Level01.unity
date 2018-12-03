@@ -99,15 +99,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 1
+    agentHeight: 3
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.33333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -13060,36 +13060,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4539120425112442, guid: 2477eb23d0c7d43328fe83c344c96965, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114473762898583128, guid: 2477eb23d0c7d43328fe83c344c96965,
-        type: 2}
-      propertyPath: sensitivityX
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114473762898583128, guid: 2477eb23d0c7d43328fe83c344c96965,
-        type: 2}
-      propertyPath: sensitivityY
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 20557816214421500, guid: 2477eb23d0c7d43328fe83c344c96965,
-        type: 2}
-      propertyPath: far clip plane
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 20557816214421500, guid: 2477eb23d0c7d43328fe83c344c96965,
-        type: 2}
-      propertyPath: m_AllowDynamicResolution
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20557816214421500, guid: 2477eb23d0c7d43328fe83c344c96965,
-        type: 2}
-      propertyPath: m_AllowMSAA
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20557816214421500, guid: 2477eb23d0c7d43328fe83c344c96965,
-        type: 2}
-      propertyPath: m_HDR
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
