@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SearchState : BaseState 
 {
-    [SerializeField] private float searchRadius;
     [SerializeField] private float searchDistance;
 
     public override void Construct()
