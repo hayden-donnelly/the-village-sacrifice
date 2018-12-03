@@ -77,7 +77,7 @@ public class PatrolState : BaseState
 
 	public override void Transition()
 	{
-		if(motor.CanSeePlayer())
+		if(motor.DetectedPlayer())
 		{
 			motor.ChangeState("ChaseState");
 		}

@@ -11,8 +11,7 @@ public class FirstPersonCharacterController : MonoBehaviour
 	[SerializeField] private float sensitivityY;
 	[SerializeField] private Camera mainCamera;
 	[HideInInspector] public CharacterController Controller;
-
-	private bool isCrouched;
+	[HideInInspector] public bool isCrouched;
 	private float moveSpeed;
 
 	private void Start()
@@ -59,7 +58,7 @@ public class FirstPersonCharacterController : MonoBehaviour
 		movement *= moveSpeed;
 		movement = new Vector3(movement.x, gravityForce, movement.z);
 		movement *= Time.deltaTime;
-		
+
 		Controller.Move(movement);
 	}
 }
