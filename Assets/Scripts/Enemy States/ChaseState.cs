@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChaseState : BaseState 
 {
+	[SerializeField] private float captureDistance;
+
 	public override void Construct()
 	{
 		Debug.Log("Entering Chase State");
@@ -22,6 +24,12 @@ public class ChaseState : BaseState
 		while(true)
 		{
 			motor.agent.SetDestination(motor.playerTransform.position);
+
+			if(Vector3.Distance(transform.position, motor.playerTransform.position) <= captureDistance)
+			{
+				
+			}
+
 			yield return null;
 		}
 	}
