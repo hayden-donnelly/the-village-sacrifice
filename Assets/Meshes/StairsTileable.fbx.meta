@@ -11,7 +11,17 @@ ModelImporter:
     3300000: //RootNode
     4300000: Cube.020
     6400000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaster
+    second: {fileID: 2100000, guid: 3207901186abd684ea269d3e91fb3d1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone
+    second: {fileID: 2100000, guid: f35351395b90eae41906041093763e0f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

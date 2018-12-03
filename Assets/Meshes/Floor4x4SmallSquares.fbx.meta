@@ -6,20 +6,54 @@ ModelImporter:
     100000: Cube.015
     100002: //RootNode
     100004: Plane.004
+    100006: Cube.003
+    100008: Plane.002
+    100010: Cube.035
+    100012: Plane.006
     400000: Cube.015
     400002: //RootNode
     400004: Plane.004
+    400006: Cube.003
+    400008: Plane.002
+    400010: Cube.035
+    400012: Plane.006
     2100000: Stone
     2100002: Plaster
     2300000: Cube.015
     2300002: Plane.004
+    2300004: Cube.003
+    2300006: Plane.002
+    2300008: Cube.035
+    2300010: Plane.006
     3300000: Cube.015
     3300002: Plane.004
+    3300004: Cube.003
+    3300006: Plane.002
+    3300008: Cube.035
+    3300010: Plane.006
     4300000: Cube.015
     4300002: Plane.004
+    4300004: Plane.002
+    4300006: Cube.003
+    4300008: Cube.035
+    4300010: Plane.006
     6400000: Cube.015
     6400002: Plane.004
-  externalObjects: {}
+    6400004: Cube.003
+    6400006: Plane.002
+    6400008: Cube.035
+    6400010: Plane.006
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaster
+    second: {fileID: 2100000, guid: 3207901186abd684ea269d3e91fb3d1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone
+    second: {fileID: 2100000, guid: f35351395b90eae41906041093763e0f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
