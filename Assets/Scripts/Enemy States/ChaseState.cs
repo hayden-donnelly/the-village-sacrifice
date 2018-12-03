@@ -7,6 +7,7 @@ public class ChaseState : BaseState
 	public override void Construct()
 	{
 		Debug.Log("Entering Chase State");
+		motor.animator.SetInteger("State", 1);
 		coroutine = Chase();
 		StartCoroutine(coroutine);
 	}

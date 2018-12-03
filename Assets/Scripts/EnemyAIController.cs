@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAIController : MonoBehaviour 
 {
+	public Animator animator;
 	[SerializeField] private int fieldOfView;
 	[SerializeField] private float sightDetectionDistance;
 	[SerializeField] private float walkingDetectionRadius;
@@ -15,6 +16,13 @@ public class EnemyAIController : MonoBehaviour
 	[HideInInspector] public FirstPersonCharacterController player;
 	private BaseState state;
 	private BaseState[] availableStates;
+
+	public enum AnimStates
+	{
+		Walk = 1,
+		Notice = 2,
+		Search = 3,
+	}
 
 	private void Start()
 	{
