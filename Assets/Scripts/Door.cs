@@ -8,11 +8,8 @@ public class Door : MonoBehaviour
 	{
 		if(GameState.hasKey)
 		{
-			print("Level complete");
-		}
-		else
-		{
-			print("Get the key");
+			Debug.Log("Level complete");
+			// Load next level
 		}
 	}
 }

@@ -27,11 +27,13 @@ public class ChaseState : BaseState
 
 			if(Vector3.Distance(transform.position, motor.playerTransform.position) <= captureDistance)
 			{
-				// Gameover
+				Debug.Log("GameOver");
+				break;
 			}
 
 			yield return null;
 		}
+		yield return null;
 	}
 
 	public override void Transition()
