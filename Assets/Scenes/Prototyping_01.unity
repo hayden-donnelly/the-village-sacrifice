@@ -1218,6 +1218,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114819910102737992, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
+        type: 2}
+      propertyPath: patrolRouteParents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4642259086851396, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636, type: 2}
       propertyPath: m_LocalPosition.x
       value: 21.01

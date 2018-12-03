@@ -11,7 +11,7 @@ public class PatrolState : BaseState
 	private List<List<Vector3>> patrolRoutes = new List<List<Vector3>>();
 	private List<Vector3> patrolRouteCentres = new List<Vector3>();
 
-	private void Start()
+	private void Awake()
 	{
 		base.Awake();
 
