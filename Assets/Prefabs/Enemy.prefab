@@ -303,6 +303,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1658342405162742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4726541831840350}
+  m_Layer: 9
+  m_Name: EnemyHead
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1825980047538960
 GameObject:
   m_ObjectHideFlags: 1
@@ -482,6 +497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4077612093699404}
+  - {fileID: 4726541831840350}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -512,6 +528,19 @@ Transform:
   - {fileID: 4803616313686356}
   m_Father: {fileID: 4350700834167616}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4726541831840350
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1658342405162742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.704, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4642259086851396}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4747697733653650
 Transform:
@@ -660,6 +689,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 311
+  head: {fileID: 4726541831840350}
   agent: {fileID: 0}
   playerTransform: {fileID: 0}
   player: {fileID: 0}
@@ -748,7 +778,7 @@ NavMeshAgent:
   m_Radius: 1
   m_Speed: 6
   m_Acceleration: 100
-  avoidancePriority: 99
+  avoidancePriority: 50
   m_AngularSpeed: 260
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1

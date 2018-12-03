@@ -10,6 +10,7 @@ public class FirstPersonCharacterController : MonoBehaviour
 	[SerializeField] private float sensitivityX;
 	[SerializeField] private float sensitivityY;
 	[SerializeField] private Camera mainCamera;
+	[SerializeField] private Transform head;
 	[HideInInspector] public CharacterController Controller;
 	[HideInInspector] public bool isCrouched;
 	private float moveSpeed;
@@ -29,6 +30,7 @@ public class FirstPersonCharacterController : MonoBehaviour
 		{
 			if(isCrouched)
 			{
+				
 				isCrouched = false;
 				moveSpeed = walkSpeed;
 			}
