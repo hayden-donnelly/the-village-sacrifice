@@ -1020,6 +1020,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 64501521995320662, guid: adc5b43cd32f30044957551a0974e22f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adc5b43cd32f30044957551a0974e22f, type: 2}
   m_IsPrefabAsset: 0
@@ -1161,6 +1166,11 @@ Prefab:
     - target: {fileID: 4539120425112442, guid: 2477eb23d0c7d43328fe83c344c96965, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20557816214421500, guid: 2477eb23d0c7d43328fe83c344c96965,
+        type: 2}
+      propertyPath: m_AllowDynamicResolution
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2477eb23d0c7d43328fe83c344c96965, type: 2}
@@ -1487,10 +1497,6 @@ Prefab:
     - target: {fileID: 1712532128005332, guid: c1d43c71d5688dc42b71ec90ee84b814, type: 2}
       propertyPath: m_Name
       value: Wall4x4Var1 (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4677603556349948, guid: c1d43c71d5688dc42b71ec90ee84b814, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.00001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d43c71d5688dc42b71ec90ee84b814, type: 2}
