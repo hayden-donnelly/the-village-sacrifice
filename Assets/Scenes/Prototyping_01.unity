@@ -494,34 +494,6 @@ Transform:
   m_Father: {fileID: 33347034}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &348271120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1655006273324006, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-    type: 2}
-  m_PrefabInternal: {fileID: 1384195053}
---- !u!4 &348271129 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4642259086851396, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-    type: 2}
-  m_PrefabInternal: {fileID: 1384195053}
---- !u!95 &348271130
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 348271120}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 38cf3436cc06047d3a9ca7bd16a7ab16, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &376417784
 Prefab:
   m_ObjectHideFlags: 0
@@ -1078,56 +1050,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b127815fd0f2074eae3a0c6a4786d0b, type: 2}
   m_IsPrefabAsset: 0
---- !u!1001 &939405383
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 348271129}
-    m_Modifications:
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: fa357be86774f304ca2913eded828a79, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3ab2114f5b07948629bf93484b7a2c13, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fa357be86774f304ca2913eded828a79, type: 3}
-  m_IsPrefabAsset: 0
 --- !u!1 &948597427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,11 +1218,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114819910102737992, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: patrolRouteParents.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4642259086851396, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636, type: 2}
       propertyPath: m_LocalPosition.x
       value: 21.01
@@ -1333,71 +1250,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114688538259290594, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 114819910102737992, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
         type: 2}
       propertyPath: patrolRouteParents.Array.data[0]
       value: 
       objectReference: {fileID: 33347034}
-    - target: {fileID: 136457244025358880, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114688538259290594, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: fieldOfView
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 114063773305387500, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: searchDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 195358350637567858, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: avoidancePriority
-      value: 99
-      objectReference: {fileID: 0}
-    - target: {fileID: 114688538259290594, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: sightDetectionDistance
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 114688538259290594, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: walkingDetectionRadius
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 114688538259290594, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: crouchingDetectionRadius
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 33475593235773490, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 114819910102737992, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: patrolRouteParents.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114819910102737992, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: chanceToChangePatolRoutes
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 23920453958380038, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad1a1f2bd01d494ab5b74a3fe7e0636, type: 2}
   m_IsPrefabAsset: 0
