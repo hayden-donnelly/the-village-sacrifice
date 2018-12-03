@@ -1,27 +1,20 @@
 fileFormatVersion: 2
-guid: 25d01259348f3d740a9c3035ae179ae8
+guid: d2ec4f3f732292d41b0c6ada432358ee
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Iron
-    2100002: Wood
+    2100000: Banner
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.043
-    6400000: //RootNode
+    4300000: Plane.008
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Iron
-    second: {fileID: 2100000, guid: 8b87707940cb707409dfd5dfd3b52185, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wood
-    second: {fileID: 2100000, guid: 6fa2e110491ff8f48a0ed1356a83fe2c, type: 2}
+      name: Banner
+    second: {fileID: 2100000, guid: 26a72eb06ad2b0e48909a1c3069ac41b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -54,7 +47,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
