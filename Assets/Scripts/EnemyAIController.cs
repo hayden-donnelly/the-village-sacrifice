@@ -6,6 +6,9 @@ using UnityEngine.AI;
 public class EnemyAIController : MonoBehaviour 
 {
 	[SerializeField] private int fieldOfView;
+	[SerializeField] private float sightDetectionDistance;
+	[SerializeField] private float walkingDetectionRadius;
+	[SerializeField] private float crouchingDetectionRadius;
 	[SerializeField] private LayerMask mask;
 	[HideInInspector] public NavMeshAgent agent;
 	[HideInInspector] public Transform playerTransform;
@@ -51,13 +54,29 @@ public class EnemyAIController : MonoBehaviour
 		Debug.LogWarning("New state could not be found");
 	}
 
-	public bool CanSeePlayer()
+	public bool DetectedPlayer()
 	{
-		// TODO expand this to include detection by nose and distance
-		if(!Physics.Linecast(transform.position, playerTransform.position, mask)
-			&& Vector3.Angle(transform.forward, playerTransform.transform.position) < fieldOfView)
+		if(!Physics.Linecast(transform.position, playerTransform.position, mask))
 		{
-			return true;
+			if(Vector3.Angle(transform.forward, playerTransform.transform.position) < fieldOfView
+				&& Vector3.Distance(transform.position, playerTransform.position) <= sightDetectionDistance)
+			{
+				return true;
+			}
+			if(player.isCrouched)
+			{
+				if(Vector3.Distance(transform.position, playerTransform.position) <= crouchingDetectionRadius)
+				{
+					return true;
+				}
+			}
+			else
+			{
+				if(Vector3.Distance(transform.position, playerTransform.position) <= walkingDetectionRadius)
+				{
+					return true;
+				}
+			}
 		}
 		return false;
 	}

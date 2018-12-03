@@ -63,7 +63,7 @@ public class SearchState : BaseState
 
     public override void Transition()
     {
-        if(motor.CanSeePlayer())
+        if(motor.DetectedPlayer())
         {
             motor.ChangeState("ChaseState");
         }
