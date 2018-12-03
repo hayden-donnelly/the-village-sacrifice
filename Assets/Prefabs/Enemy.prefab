@@ -682,7 +682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95193109311725926}
-  fieldOfView: 180
+  fieldOfView: 90
   sightDetectionDistance: 33
   walkingDetectionRadius: 11
   crouchingDetectionRadius: 4
