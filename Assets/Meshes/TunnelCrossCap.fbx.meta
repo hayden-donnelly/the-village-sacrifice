@@ -4,13 +4,35 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cube.034
+    100004: Cube.037
     400000: //RootNode
+    400002: Cube.034
+    400004: Cube.037
     2100000: Stone
     2100002: Plaster
     2300000: //RootNode
+    2300002: Cube.034
+    2300004: Cube.037
     3300000: //RootNode
+    3300002: Cube.034
+    3300004: Cube.037
     4300000: Cube.034
-  externalObjects: {}
+    4300002: Cube.037
+    6400000: //RootNode
+    6400002: Cube.034
+    6400004: Cube.037
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plaster
+    second: {fileID: 2100000, guid: 3207901186abd684ea269d3e91fb3d1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone
+    second: {fileID: 2100000, guid: f35351395b90eae41906041093763e0f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -43,13 +65,13 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

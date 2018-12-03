@@ -10,7 +10,12 @@ ModelImporter:
     3300000: //RootNode
     4300000: Wall4x4WoodFrameTileable.002
     6400000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 6fa2e110491ff8f48a0ed1356a83fe2c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
