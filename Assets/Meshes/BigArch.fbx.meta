@@ -22,6 +22,9 @@ ModelImporter:
     4300000: Wall4x4Var1.015
     4300002: Wall4x4Var1.014
     4300004: Cube.046
+    6400000: Cube.046
+    6400002: Wall4x4Var1.014
+    6400004: Wall4x4Var1.015
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -65,7 +68,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
