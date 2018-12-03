@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4469737336289200}
   - component: {fileID: 33465055867528866}
   - component: {fileID: 23790419063270122}
+  - component: {fileID: 64923827018288088}
   m_Layer: 0
   m_Name: FireBasket
   m_TagString: Untagged
@@ -144,6 +145,20 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1350660116207292}
+  m_Mesh: {fileID: 4300000, guid: 25d01259348f3d740a9c3035ae179ae8, type: 3}
+--- !u!64 &64923827018288088
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1350660116207292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 25d01259348f3d740a9c3035ae179ae8, type: 3}
 --- !u!108 &108060370706785304
 Light:

@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 25d01259348f3d740a9c3035ae179ae8
+guid: fbbbb6b2f588757478dd37175160a47a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Iron
-    2100002: Wood
+    2100000: Wood
+    2100002: Iron
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.043
+    4300000: WoodenCrate
     6400000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Iron
-    second: {fileID: 2100000, guid: 8b87707940cb707409dfd5dfd3b52185, type: 2}
+    second: {fileID: 2100000, guid: 9ca6731ded7607b4b9f049e5fdb647e8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
