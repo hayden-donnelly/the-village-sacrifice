@@ -12,4 +12,9 @@ public class GenericUI : MonoBehaviour
 	{
 		SceneManager.LoadScene(GameState.currentSceneID);
 	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
 }
