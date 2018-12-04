@@ -12,7 +12,13 @@ public class Door : MonoBehaviour
 		{
 			Debug.Log("Level complete");
 			doorUnlocked = true;
+			print(GameState.currentSceneID);
 			GameState.currentSceneID++;
+			if(GameState.currentSceneID < SceneManager.sceneCount)
+			{
+				// load victory scene
+				return;
+			}
 			SceneManager.LoadScene(GameState.currentSceneID);
 		}
 	}
