@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChaseState : BaseState 
 {
@@ -9,6 +10,7 @@ public class ChaseState : BaseState
 	public override void Construct()
 	{
 		Debug.Log("Entering Chase State");
+		motor.agent.speed = 11;
 		motor.animator.SetInteger("State", 1);
 		coroutine = Chase();
 		StartCoroutine(coroutine);
@@ -16,6 +18,7 @@ public class ChaseState : BaseState
 
 	public override void Destruct()
 	{
+		motor.agent.speed = 6;
 		StopCoroutine(coroutine);
 	}
 
@@ -28,6 +31,7 @@ public class ChaseState : BaseState
 			if(Vector3.Distance(transform.position, motor.playerTransform.position) <= captureDistance)
 			{
 				Debug.Log("GameOver");
+				SceneManager.LoadScene(1);
 				break;
 			}
 

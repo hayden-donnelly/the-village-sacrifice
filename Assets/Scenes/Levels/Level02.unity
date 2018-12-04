@@ -5283,7 +5283,8 @@ Prefab:
       propertyPath: interactionPrompt
       value: 
       objectReference: {fileID: 1567078591}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114995422836508234, guid: 2477eb23d0c7d43328fe83c344c96965, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 2477eb23d0c7d43328fe83c344c96965, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &737248794
