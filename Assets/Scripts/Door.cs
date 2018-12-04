@@ -14,10 +14,10 @@ public class Door : MonoBehaviour
 			doorUnlocked = true;
 			print(GameState.currentSceneID);
 			GameState.currentSceneID++;
-			if(GameState.currentSceneID < SceneManager.sceneCount)
+			print(SceneManager.sceneCount);
+			if(GameState.currentSceneID > 4)
 			{
-				// load victory scene
-				print("Victory");
+				SceneManager.LoadScene(0);
 				return;
 			}
 			SceneManager.LoadScene(GameState.currentSceneID);
