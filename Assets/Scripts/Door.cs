@@ -17,6 +17,7 @@ public class Door : MonoBehaviour
 			if(GameState.currentSceneID < SceneManager.sceneCount)
 			{
 				// load victory scene
+				print("Victory");
 				return;
 			}
 			SceneManager.LoadScene(GameState.currentSceneID);
