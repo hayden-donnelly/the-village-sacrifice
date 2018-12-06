@@ -40,7 +40,7 @@ namespace UnityEngine.PostProcessing
         RenderTexture m_CoCHistory;
 
         // Height of the 35mm full-frame format (36mm x 24mm)
-        const float k_FilmHeight = 0.024f;
+        float k_FilmHeight = 0.024f;
 
         float CalculateFocalLength()
         {
@@ -90,6 +90,7 @@ namespace UnityEngine.PostProcessing
             #endif
 
             // Material setup
+            k_FilmHeight = 0.024f * (Screen.height / 720.0f);
             var f = CalculateFocalLength();
             var s1 = Mathf.Max(settings.focusDistance, f);
             var aspect = (float)source.width / source.height;
