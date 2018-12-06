@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour 
 {
+	[SerializeField] private GameObject keyMessage;
+	[SerializeField] private float messageDisplayTime;
 	private bool doorUnlocked;
+
 	public void Interact()
 	{
 		if(GameState.hasKey && !doorUnlocked)
@@ -22,5 +25,16 @@ public class Door : MonoBehaviour
 			}
 			SceneManager.LoadScene(GameState.currentSceneID);
 		}
+		else
+		{
+			StartCoroutine(DisplayKeyMessage());
+		}
+	}
+
+	private IEnumerator DisplayKeyMessage()
+	{
+		keyMessage.SetActive(true);
+		yield return new WaitForSeconds(messageDisplayTime);
+		keyMessage.SetActive(false);
 	}
 }

@@ -191,8 +191,8 @@ MonoBehaviour:
   walkSpeed: 10
   crouchSpeed: 3
   gravityForce: -10
-  sensitivityX: 100
-  sensitivityY: 100
+  sensitivityX: 60
+  sensitivityY: 60
   mainCamera: {fileID: 20557816214421500}
   head: {fileID: 0}
   Controller: {fileID: 0}
@@ -222,7 +222,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.4
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
