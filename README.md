@@ -1,4 +1,4 @@
-# Bad Art Studio
+# The Village Sacrifice
 
 Stealth game made in 72 hours for Ludem Dare 43.
 
