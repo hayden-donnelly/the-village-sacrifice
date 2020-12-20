@@ -8,7 +8,7 @@ Stealth game made in 72 hours for Ludem Dare 43.
 
 ## Authors
 
-* **Hayden Donnelly** - *Programmer* - [Bizbud](https://github.com/Bizbud)
+* **Hayden Donnelly** - *Programmer*
 * **Peter Prickarz** - *Artist*
 
 See also the list of [contributors](https://github.com/Bizbud/The-Village-Sacrifice/graphs/contributors) who participated in this project.
