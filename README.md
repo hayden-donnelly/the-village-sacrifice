@@ -4,12 +4,6 @@ The Village Sacrifice is a stealth game made in 72 hours for Ludem Dare 43. This
 
 "Your village has decided to deal with over population by sacrificing you to the great stone golem who lives nearby. Your goal is to sneak through the dungeon and escape undetected."
 
-
-
-## Built With
-
-* [Unity](https://unity.com/) - Game Engine 
-
 ## Authors
 
 * **Hayden Donnelly** - *Programmer*
