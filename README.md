@@ -8,6 +8,7 @@ The Village Sacrifice is a stealth game made in 72 hours for Ludem Dare 43. This
 
 * **Hayden Donnelly** - *Programmer*
 * **Peter Prickarz** - *Artist*
+* **Eric Goetz** - *Composer*
 
 See also the list of [contributors](https://github.com/Bizbud/The-Village-Sacrifice/graphs/contributors) who participated in this project.
 
