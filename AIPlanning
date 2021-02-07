@@ -12,4 +12,4 @@ Enemy AI States:
 
     3. Search:
         - Occurs once the player can no longer be seen
-        - Search the are surrounding the player's last known position
+        - Search the area surrounding the player's last known position
