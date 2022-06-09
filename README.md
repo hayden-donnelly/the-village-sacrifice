@@ -10,10 +10,6 @@ The Village Sacrifice is a stealth game made in 72 hours for Ludem Dare 43. This
 * **Peter Prickarz** - *Artist*
 * **Eric Goetz** - *Composer*
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Screenshots
 
 ![VS1_c](https://user-images.githubusercontent.com/30982485/102728697-39dde500-42fb-11eb-8b78-a6520002a540.png)
