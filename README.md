@@ -13,7 +13,7 @@
 The enemy AI has three main states: patrol, chase, and search. Beginning in the patrol state, it will walk around a number of pre-defined patrol routes.
 If the AI detects the player during its patrol, it will enter the chase state. In this state, the AI will simply run towards wherever the player is. 
 If the AI loses line of sight on the player while chasing, it will enter the search state. Upon first entering the search state, the AI will walk to the
-player's last known location, and then begin to search the surrounding area in four directions. If the AI detects the player at any time during this search, it will automatically transition to the chase state. If the search completes and the player has not been detected, the AI will go back to the patrol state.
+player's last known location, and then begin to search the surrounding area in four directions. If the AI detects the player at any time during this search, it will automatically transition to the chase state. However, if the search completes and the player has not been detected, the AI will go back to the patrol state.
 
 ![IMG_0778](https://user-images.githubusercontent.com/30982485/172991846-ba52711d-c806-45ee-a4dc-78700701df00.jpg)
 
