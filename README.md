@@ -8,6 +8,10 @@
 * **Peter Prickarz** - *Artist*
 * **Eric Goetz** - *Composer*
 
+## Finite State Machine AI
+
+![IMG_0778](https://user-images.githubusercontent.com/30982485/172991846-ba52711d-c806-45ee-a4dc-78700701df00.jpg)
+
 ## Screenshots
 
 ![VS1_c](https://user-images.githubusercontent.com/30982485/102728697-39dde500-42fb-11eb-8b78-a6520002a540.png)
